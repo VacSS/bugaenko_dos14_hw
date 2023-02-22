@@ -1,1 +1,88 @@
+ss@ubuntu2204:~$ uname -r
+5.19.0-32-generic
+
+
+
+
+
+
+ss@ubuntu2204:~$ lscpu
+Architecture:            x86_64
+  CPU op-mode(s):        32-bit, 64-bit
+  Address sizes:         45 bits physical, 48 bits virtual
+  Byte Order:            Little Endian
+CPU(s):                  4
+  On-line CPU(s) list:   0-3
+Vendor ID:               AuthenticAMD
+  Model name:            AMD Ryzen 7 3700X 8-Core Processor
+    CPU family:          23
+    Model:               113
+    Thread(s) per core:  1
+    Core(s) per socket:  4
+    Socket(s):           1
+    Stepping:            0
+    BogoMIPS:            7200.01
+    Flags:               fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mc
+                         a cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall n
+                         x mmxext pdpe1gb rdtscp lm constant_tsc rep_good nopl t
+                         sc_reliable nonstop_tsc cpuid extd_apicid tsc_known_fre
+                         q pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic mov
+                         be popcnt aes xsave avx f16c rdrand hypervisor lahf_lm
+                         cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefet
+                         ch osvw topoext ssbd ibpb vmmcall fsgsbase bmi1 avx2 sm
+                         ep bmi2 rdseed adx smap clflushopt clwb sha_ni xsaveopt
+                          xsavec xgetbv1 xsaves clzero arat umip rdpid overflow_
+                         recov succor
+Virtualization features:
+  Hypervisor vendor:     VMware
+  Virtualization type:   full
+Caches (sum of all):
+  L1d:                   128 KiB (4 instances)
+  L1i:                   128 KiB (4 instances)
+  L2:                    2 MiB (4 instances)
+  L3:                    16 MiB (1 instance)
+NUMA:
+  NUMA node(s):          1
+  NUMA node0 CPU(s):     0-3
+Vulnerabilities:
+  Itlb multihit:         Not affected
+  L1tf:                  Not affected
+  Mds:                   Not affected
+  Meltdown:              Not affected
+  Mmio stale data:       Not affected
+  Retbleed:              Mitigation; untrained return thunk; SMT disabled
+  Spec store bypass:     Mitigation; Speculative Store Bypass disabled via prctl
+  Spectre v1:            Mitigation; usercopy/swapgs barriers and __user pointer
+                          sanitization
+  Spectre v2:            Mitigation; Retpolines, IBPB conditional, STIBP disable
+                         d, RSB filling, PBRSB-eIBRS Not affected
+  Srbds:                 Not affected
+  Tsx async abort:       Not affected
+  
+  
+  
+  
+  
+s@ubuntu2204:~$ free
+               total        used        free      shared  buff/cache   available
+Mem:         3982132     2099976      121032       35616     1761124     1596828
+Swap:        2191356      211644     1979712
+
+
+
+
+
+
+ss@ubuntu2204:~$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           389M  2,2M  387M   1% /run
+/dev/sda3        20G   14G  4,4G  76% /
+tmpfs           1,9G   16M  1,9G   1% /dev/shm
+tmpfs           5,0M  4,0K  5,0M   1% /run/lock
+/dev/sda2       512M  6,1M  506M   2% /boot/efi
+tmpfs           389M  2,4M  387M   1% /run/user/1000
+vmhgfs-fuse     782G  697G   85G  90% /mnt/hgfs
+
+
+
 
